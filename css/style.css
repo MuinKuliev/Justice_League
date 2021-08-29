@@ -1,0 +1,307 @@
+:root{
+    --main-gred: linear-gradient(316.53deg, #26FFF2 13.2%, #326CFF 71.54%);
+}
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    background-color: #000000;
+}
+a{
+    
+    font-family: inherit;
+    color: inherit;
+    text-decoration: none;
+}
+button{
+    border: none;
+    background-color: transparent;
+    color: inherit;
+    cursor: pointer;
+}
+li{
+    list-style: none;
+}
+
+.header{
+    border-bottom: 2px solid  #2F2E2E;
+}
+.conteiner{
+    max-width: 1460px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.top__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+}
+.menu,
+.action{
+    display: flex;
+    justify-content: space-between;
+}
+.menu__item+.menu__item{
+    margin-left: 54px;
+}
+
+.menu__item{
+    font-size: 16px;
+    opacity: .5;
+    transition: all .2s linear;
+}
+.menu__item:hover{
+    opacity: 1;
+}
+
+.menu__item a:hover::after{
+    content: "";
+    display: flex;
+    flex-flow: column;
+    background: var(--main-gred);
+    border-radius: 50px;
+    width: 100%;
+    height: 2px;
+}
+
+.action__item+.action__item{
+    margin-left: 75px;
+}
+.header__bottom{
+    display: flex;
+    align-items: center;
+    height: 724px;
+    background:linear-gradient(90deg,rgb(0, 0, 0) 35%,rgba(0, 0, 0, 0) 60%) right, url(../img/main.png) no-repeat right top;
+}
+.header__info{
+    display: flex;
+    flex-flow: column;
+    width: 40%;
+}
+.discription{
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+}
+.discription>div{
+    margin-right: 18px;
+}
+.movies__title{
+    font-size: 80px;
+    margin-bottom: 35px;
+}
+.movies__description{
+    margin-bottom: 35px;
+}
+
+.raiting{
+    border-top: 2px solid #326CFF;
+    border-left: 2px solid #326CFF;
+    border-right: 2px solid #26FFF2;
+    border-bottom: 2px solid #26FFF2;
+    border-radius: 100px;
+    padding: 2px 15px;
+}
+.buttons{
+    display: flex;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    border-radius: 100px;
+    background: var(--main-gred);
+    transition: all .2s linear;
+}
+.btn:hover{
+    box-shadow: 0px 4px 50px rgba(50, 108, 255, 0.5);
+}
+.btn span{
+    margin-left: 15px;
+}
+.btn2{
+    padding: 15px 30px;
+    background-color: #fff;
+    color: black;
+    border-radius: 100px;
+    margin-left: 30px;
+}
+.tv__shows__block,
+.movies__block,
+.genres__block,
+.actors__block{
+    margin: 60px 0;
+}
+
+.block__title{
+    display: flex;
+    align-items: center;
+    margin-bottom: 45px;
+
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 20px;
+}
+.block__title::before{
+    content: "";
+    background: var(--main-gred);
+    border-radius: 50px;
+    height: 8px;
+    width: 35px;
+    transform: rotate(-90deg);
+    margin-right: 10px;
+}
+.block__title::after{
+    content: url(/img/pause.svg);
+    margin-left: 10px;
+}
+.tv__show,
+.movie,
+.genres,
+.actor{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.tv__show img,
+.movie img{
+    margin: 10px;
+    border-radius: 20px;
+    transition: all .2s linear;
+}
+
+.tv__show img:hover,
+.movie img:hover{
+    box-shadow: 0px 4px 50px rgba(50, 108, 255, 0.5);
+}
+
+.genres>a{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    width: 23%;
+    height: 200px;
+    border-radius: 20px;
+    margin: 10px;
+    transition: linear .2s all;
+}
+.romance{
+    background: linear-gradient(109.31deg, #FD093F 2.4%, #F383F1 100%);
+}
+.romance:hover{
+    box-shadow: 0px 4px 50px #FD093F;
+}
+.drama{
+    background: linear-gradient(114.5deg, #0FFFDA 2.22%, #3CDB77 68.84%);
+}
+.drama:hover{
+    box-shadow: 0px 4px 50px #0fffda;
+}
+.historical{
+    background: linear-gradient(109.31deg, #B936FF 2.4%, #57DEDA 100%);
+}
+.historical:hover{
+    box-shadow: 0px 4px 50px #B936FF;
+}
+.action-m{
+    background: linear-gradient(109.31deg, #FD093F 2.4%, #FB1378 2.41%, #FCCB1A 100%);
+}
+.action-m:hover{
+    box-shadow: 0px 4px 50px #FD093F;
+}
+.sci-fi{
+    background: linear-gradient(109.31deg, #FF6472 2.4%, #FDA75D 100%);
+}
+.sci-fi:hover{
+    box-shadow: 0px 4px 50px #FF6472;
+}
+.horror{
+    background: linear-gradient(110.16deg, #13547A 2.37%, #80D0C7 96.77%);
+}
+.horror:hover{
+    box-shadow: 0px 4px 50px #13547a;
+}
+.comedy{
+    background: linear-gradient(109.93deg, #FFF77B 2.37%, #FFBF42 50%);
+}
+.comedy:hover{
+    box-shadow: 0px 4px 50px #FFF77B;
+}
+.documentary{
+    background: linear-gradient(109.31deg, #1FA2FF 2.4%, #1FA2FF 2.41%, #1F535C 97.46%);
+}
+.documentary:hover{
+    box-shadow: 0px 4px 50px #1fa2ff;
+}
+.actor img{
+    border-radius: 100px;
+    transition: all .2s linear;
+}
+.actor>a{
+    text-align: center;
+    margin: 0 10px;
+}
+.actor img:hover{
+    box-shadow: 0px 4px 50px #1fa2ff;
+}
+
+.coming__soon{
+    display: flex;
+    align-items: center;
+    background: linear-gradient(87.02deg, #0D1A73 29.67%, #000000 70.52%);
+    box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    overflow: hidden;
+}
+.coming__soon img:first-child{
+    width: 50%;
+}
+.coming__soon img+img{
+    margin: 0 auto;
+}
+.register{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 70px 130px;
+    background: url(../img/register.png) no-repeat center;
+    margin: 70px 0;
+}
+.register h2{
+    font-size: 64px;
+    margin: 0 20px;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #101012;
+    padding: 70px;
+}
+.footer__inner{
+    display: flex;
+    margin: 0 auto;
+}
+.footer__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-flow: wrap;
+    margin-left: 52px;
+}
+.footer__content>a{
+    line-height: 20px;
+    width: 24%;
+    opacity: .5;
+}
